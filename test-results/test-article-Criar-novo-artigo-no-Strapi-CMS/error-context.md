@@ -1,83 +1,21 @@
 # Page snapshot
 
 ```yaml
-- link "Skip to content":
-  - /url: "#main-content"
-- navigation:
-  - img "Application logo"
-  - text: Strapi DashboardWorkplace
-  - separator
-  - list:
-    - listitem:
-      - link "Home":
-        - /url: /admin
-    - listitem:
-      - link "Content Manager":
-        - /url: /admin/content-manager
-    - listitem:
-      - link "Media Library":
-        - /url: /admin/plugins/upload
-    - listitem:
-      - link "Content-Type Builder":
-        - /url: /admin/plugins/content-type-builder
-    - listitem:
-      - link "Deploy":
-        - /url: /admin/plugins/cloud
-    - listitem:
-      - link "Marketplace":
-        - /url: /admin/marketplace
-    - listitem:
-      - link "Settings":
-        - /url: /admin/settings
-        - text: Settings 1
-  - button "SA Super Admin"
-- navigation "Content Manager":
-  - heading "Content Manager" [level=2]
-  - button "Search for a content type"
-  - separator
-  - list:
-    - listitem:
-      - text: Collection Types 4
-      - list:
-        - listitem:
-          - link "Artigo":
-            - /url: /admin/content-manager/collection-types/api::article.article?page=1&pageSize=10&sort=title%3AASC
-        - listitem:
-          - link "Autor":
-            - /url: /admin/content-manager/collection-types/api::author.author?page=1&pageSize=10&sort=name%3AASC
-        - listitem:
-          - link "Categoria":
-            - /url: /admin/content-manager/collection-types/api::category.category?page=1&pageSize=10&sort=name%3AASC
-        - listitem:
-          - link "User":
-            - /url: /admin/content-manager/collection-types/plugin::users-permissions.user?page=1&pageSize=10&sort=username%3AASC
-    - listitem:
-      - text: Single Types 2
-      - list:
-        - listitem:
-          - link "About":
-            - /url: /admin/content-manager/single-types/api::about.about
-        - listitem:
-          - link "Global":
-            - /url: /admin/content-manager/single-types/api::global.global
+- banner:
+  - combobox "Select interface language": English
 - main:
-  - link "Back":
-    - /url: /admin
-    - img
-    - text: Back
-  - heading "About" [level=1]
-  - button "More actions"
-  - tablist "Document status"
-  - tabpanel:
-    - text: title
-    - textbox "title"
-    - button "Add a component to blocks"
-  - complementary:
-    - heading "Entry" [level=2]
-    - button "Save" [disabled]
+  - heading "Welcome to Strapi!" [level=1]
+  - text: Log in to your Strapi account Email
+  - textbox "Email": admin@satc.edu.br
+  - text: Password
+  - textbox "Password": welcomeToStrapi123
+  - button "Show password"
+  - checkbox "Remember me"
+  - text: Remember me
+  - button "Login"
+  - link "Forgot your password?":
+    - /url: /admin/auth/forgot-password
 - log
-- status: The schemas have been successfully loaded
+- status
 - alert
-- text: Content Manager
-- tooltip "Content Manager"
 ```
