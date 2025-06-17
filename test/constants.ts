@@ -1,4 +1,4 @@
-export const { CUSTOM_TRANSFER_TOKEN_ACCESS_KEY } = require('./app-template/src/constants');
+//export const { CUSTOM_TRANSFER_TOKEN_ACCESS_KEY } = require('./app-template/src/constants');
 
 export const TITLE_LOGIN = 'Strapi Admin';
 export const TITLE_HOME = 'Homepage | Strapi';
