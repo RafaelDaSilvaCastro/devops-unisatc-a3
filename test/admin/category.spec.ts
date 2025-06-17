@@ -1,6 +1,8 @@
 import { test, expect, Page } from '@playwright/test';
 import { ADMIN_EMAIL_ADDRESS, ADMIN_PASSWORD } from "../constants";
 
+test.use({ headless: true });
+
 async function login(page: Page) {
     await page.goto('http://localhost:1337/admin');
 
