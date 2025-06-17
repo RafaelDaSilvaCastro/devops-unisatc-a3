@@ -12,6 +12,7 @@ async function login(page: Page) {
     await page.getByRole('button', { name: 'Login' }).click();
 
     // Verificar se o login foi bem-sucedido
+
     await expect(page).toHaveTitle('Homepage | Strapi');
 }
 
