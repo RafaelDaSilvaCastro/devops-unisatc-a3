@@ -72,7 +72,7 @@ test.describe('Testes de Categoria', () => {
 
         // Validar a mensagem de sucesso
 
-        // await validateSuccessMessage(page, 'Success: Saved document');
+        await validateSuccessMessage(page, 'Success: Saved document');
 
         // Validar que a categoria foi criada com sucesso
 
