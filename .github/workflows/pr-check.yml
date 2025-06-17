@@ -1,4 +1,4 @@
-name: PR Check
+name: PR CheckSucesso
 on:
   pull_request:
     branches: [master]
