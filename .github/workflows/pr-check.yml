@@ -9,5 +9,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm install
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
       - name: Run specific E2E test
         run: npx playwright test test/admin/login.spec.ts
