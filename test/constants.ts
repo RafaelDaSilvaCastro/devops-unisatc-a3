@@ -1,8 +1,3 @@
-//export const { CUSTOM_TRANSFER_TOKEN_ACCESS_KEY } = require('./app-template/src/constants');
-
-export const TITLE_LOGIN = 'Strapi Admin';
-export const TITLE_HOME = 'Homepage | Strapi';
-
 export const ADMIN_EMAIL_ADDRESS = 'admin@satc.edu.br';
 export const ADMIN_PASSWORD = 'welcomeToStrapi123';
 
