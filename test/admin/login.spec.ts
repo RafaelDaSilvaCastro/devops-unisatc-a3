@@ -6,7 +6,7 @@ import {
     INVALID_EMAIL_ADDRESS,
 } from "../constants";
 
-test.use({ headless: false });
+test.use({ headless: true });
 
 test.describe('Login', () => {
     test.beforeEach(async ({ page }) => {
